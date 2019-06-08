@@ -46,23 +46,25 @@
 
     <!-- header 
    ================================================== -->
-   <header id="header" class="row">   
+   <header id="header" class="#">   
+   <center> <img class="sppad spcenter spfixed"  src="static/images/chant.gif"> </center>
 
-   		<div class="header-logo">
-	        <a href="index.html">Dazzle</a>
-	    </div>
+   		{% comment %} <div class="header-logo">
+           
+	        <a href="index.html">#</a>
+	    </div> {% endcomment %}
 
-	   	<nav id="header-nav-wrap">
-			<ul class="header-main-nav">
-				<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+	    <nav id="header-nav-wrap">
+			 <ul class="header-main-nav">
+				{% comment %} <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                 <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-				<li><a class="smoothscroll"  href="#pricing" title="pricing">Pricing</a></li>
-				<li><a class="smoothscroll"  href="#testimonials" title="testimonials">Testimonials</a></li>
-				<li><a class="smoothscroll"  href="#download" title="download">Download</a></li>	
-			</ul>
+				<li><a class="smoothscroll"  href="#pricing" title="pricing">Pricing</a></li> {% endcomment %}
+				 <li><a class="smoothscroll"  href="#testimonials" title="testimonials">Follow</a></li> 
+				<li><a class="smoothscroll"  href="#download" title="download">About</a></li>	
+			</ul> 
 
-            <a href="#" title="sign-up" class="button button-primary cta">Sign Up</a>
-		</nav>
+            <a href="#" title="sign-up" class="button button-primary cta">Be a beta Tester</a>
+		</nav>  
 
 		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
    	
@@ -71,26 +73,31 @@
 
    <!-- home
    ================================================== -->
-   <section id="home" data-parallax="scroll" data-image-src="static/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000>
-
+   <section id="home" data-parallax="scroll" data-image-src="static/images/smoke_stage.jpg" data-natural-width=3000 data-natural-height=2000>
+    
         <div class="overlay"></div>
         <div class="home-content">        
 
             <div class="row contents">                     
                 <div class="home-content-left">
 
-                    <h3 data-aos="fade-up">Welcome to Dazzle</h3>
+                    
 
                     <h1 data-aos="fade-up">
-                        Creative Landing <br>
-                        Page to Showcase <br>
-                        Your Amazing App.
+                    Discover. Connect. Create. 
+                        {% comment %} Discover <br>
+                        Connect <br>
+                        Create {% endcomment %}
                     </h1>
+                    <h3 data-aos="fade-up">Welcome to CHANT</h3>
+                    <p data-aos="fade-up">Chant is a social media platform that showcases creatives’ work, goals and interests.
+A confluence of those already creating and those who wish to be. We gather artists locally and globally, 
+expanding opportunities and inspiring collaboration. Click below to receive </p>
 
                     <div class="buttons" data-aos="fade-up">
                         <a href="#download" class="smoothscroll button stroke">
                             <span class="icon-circle-down" aria-hidden="true"></span>
-                            Download App
+                            Subscribe 
                         </a>
                         <a href="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=39b54a" data-lity class="button stroke">
                             <span class="icon-play" aria-hidden="true"></span>
@@ -101,10 +108,11 @@
                 </div>
 
                 <div class="home-image-right">
+                <br> 
                     <img src="static/images/iphone-app-470.png" 
                         srcset="static/images/iphone-app-470.png 1x, static/images/iphone-app-940.png 2x"  
                         data-aos="fade-up">
-                </div>
+                </div> 
             </div>
 
         </div> <!-- end home-content -->
@@ -142,17 +150,43 @@
         <div class="row about-intro">
 
             <div class="col-four">
-                <h1 class="intro-header" data-aos="fade-up">About Our App</h1>
+                <h1 class="intro-header" data-aos="fade-up">A New Way To Network For ... </h1>
+                <h2 class="#" data-aos="fade-up">
+                    Musicians // Bands // Designers // Producers Videographers // Photographers // Artists Recording Engingeers // Freelancers
+                </h2>
             </div>
-            <div class="col-eight">
-                <p class="lead" data-aos="fade-up">
-                    Excepteur enim magna veniam labore veniam sint. Ex aliqua esse proident ullamco voluptate. Nisi nisi nisi aliqua eiusmod dolor dolor proident deserunt occaecat elit Lorem reprehenderit. Id culpa veniam ex aliqua magna elit pariatur do nulla. Excepteur enim magna veniam labore veniam sint.
-                </p>
-            </div>                       
+            <div class="col-eight spcenter">
+                {% comment %} <h3 class="#" data-aos="fade-up">
+                    Musicians // Bands // Designers // Producers Videographers // Photographers // Artists Recording Engingeers // Freelancers
+                </h3> {% endcomment %}
+
+                <div class="row about-bottom-image">
+
+           <img width="80%" src="static/images/video.png" 
+                srcset="static/images/video.png 600w, 
+                        static/images/video.png 1200w, 
+                        static/images/video.png 2800w" 
+                sizes="(max-width: 2800px) 100vw, 2800px"
+                alt="App Screenshots" data-aos="fade-up">
+
+        </div>  <!-- end about-bottom-image -->  
+        <br>
+            <br> 
+           
+               
+            </div>    
             
+            <img src="static/images/app-screens-1200.png" 
+                srcset="static/images/app-screens-600.png 600w, 
+                        static/images/app-screens-1200.png 1200w, 
+                        static/images/app-screens-2800.png 2800w" 
+                sizes="(max-width: 2800px) 100vw, 2800px"
+                alt="App Screenshots" data-aos="fade-up">
+
+        </div>  <!-- end about-bottom-image --> 
         </div>
 
-        <div class="row about-features">
+        {% comment %} <div class="row about-features">
 
             <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
 
@@ -283,16 +317,86 @@
 
         <div class="row about-bottom-image">
 
-           <img src="images/app-screens-1200.png" 
-                srcset="images/app-screens-600.png 600w, 
-                        images/app-screens-1200.png 1200w, 
-                        images/app-screens-2800.png 2800w" 
+           <img src="static/images/app-screens-1200.png" 
+                srcset="static/images/app-screens-600.png 600w, 
+                        static/images/app-screens-1200.png 1200w, 
+                        static/images/app-screens-2800.png 2800w" 
                 sizes="(max-width: 2800px) 100vw, 2800px"
                 alt="App Screenshots" data-aos="fade-up">
 
-        </div>  <!-- end about-bottom-image -->       
+        </div>  <!-- end about-bottom-image -->        {% endcomment %}
         
     </section> <!-- end about -->  
+
+
+
+
+    
+
+<!-- STart Caveman Section  -->
+        
+<section id="home" data-parallax="scroll" data-image-src="static/images/topview-art.png" data-natural-width=3000 data-natural-height=2000>
+
+    <div class="overlay"></div>
+    <div class="#">        
+
+        <div class="#">                     
+            <div class="home-content-left">
+
+                
+                <div class="spbg">
+                <h1 data-aos="fade-up">
+               About Us  
+                    {% comment %} Discover <br>
+                    Connect <br>
+                    Create {% endcomment %}
+                </h1>
+                <h3 data-aos="fade-up">If humans are good at one thing, it’s finding the proper tool to take their work to the next level. When we lived in caves and got hungry, we invented the spear. When we realized that we liked gardening better than battling wooly mammoths, we invented the plow.</h3>
+                <br> 
+                <h3 data-aos="fade-up">“Making do” only makes sense for so long. At some point, it’s time to stop jury-rigging and start building the proper tool. Chant is that proper tool, beautifully designed, purposefully inclusive, and specifically functional for creatives’ needs.</h3>
+               <br> 
+               <br>
+               <br> 
+                </div> 
+
+               
+            </div>
+
+            
+        </div>
+
+    </div> <!-- end home-content -->
+
+    {% comment %} <ul class="home-social-list">
+        <li>
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </li>
+    </ul> {% endcomment %}
+    <!-- end home-social-list -->
+
+    {% comment %} <div class="home-scrolldown">
+        <a href="#about" class="scroll-icon smoothscroll">
+            <span>Scroll Down</span>
+            <i class="icon-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div> {% endcomment %}
+
+</section> <!-- end CAVEMAN section  -->  
+
+
+
+
+
+
    
 
     <!-- pricing
@@ -301,10 +405,11 @@
         <div class="row pricing-content">
 
             <div class="col-four pricing-intro">
-                <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
+                <h1 class="intro-header" data-aos="fade-up">Get Involved </h1>
 
                 <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
                 </p>
+                {% comment %} <h1 class="intro-header" data-aos="fade-up">Launching 2019 </h1> {% endcomment %}
             </div>
 
             <div class="col-eight pricing-table">
@@ -313,21 +418,34 @@
                     <div class="col-six plan-wrap">
                         <div class="plan-block" data-aos="fade-up"> 
 
-                            <div class="plan-top-part">
-                                <h3 class="plan-block-title">Lite Plan</h3>
-                                <p class="plan-block-price"><sup>$</sup>25</p>
-                                <p class="plan-block-per">Per Month</p>
+                            <div class="#">
+                                <h3 class="plan-block-title">Subscribe </h3>
+                                
+                                <p class="plan-block-per">Want to stay in the know about all the latest CHANT discoveries? Sign Up for our newsletter and stay connected. </p>
+                            <br> 
                             </div>
+                            <div class="#">
+                                <div class="#">
+                
+                        <form id="#" class="#" novalidate="true">
+                            <center> 
+                            <input type="email" value="" name="EMAIL" class="#" id="#" placeholder="Email Address" required=""> 
+                            <input type="email" value="" name="EMAIL" class="#" id="#" placeholder="Email Address" required=""> 
+                            <input type="email" value="" name="EMAIL" class="#" id="#" placeholder="Email Address" required=""> 
+                            <input type="email" value="" name="EMAIL" class="#" id="#" placeholder="Email Address" required=""> 
+                            <input type="submit" name="subscribe" value="Send">
+                            </center> 
+                
+                            <label for="mc-email" class="subscribe-message"></label>
+                
+                        </form>
 
-                            <div class="plan-bottom-part">
-                                <ul class="plan-block-features">
-                                    <li><span>3GB</span> Storage</li>
-                                    <li><span>10GB</span> Bandwidth</li>	                  
-                                    <li><span>5</span> Databases</li>		                  
-                                    <li><span>30</span> Email Accounts</li>
-                                </ul>
+                    </div>
+                                
 
-                                <a class="button button-primary large" href="">Get Started</a>
+                                
+
+                                {% comment %} <a class="button button-primary large" href="">Get Started</a> {% endcomment %}
                             </div>  
                      
                         </div>
@@ -387,7 +505,7 @@
                         </p> 
 
                         <div class="testimonial-author">
-                                <img src="images/avatars/user-02.jpg" alt="Author image">
+                                <img src="static/images/avatars/user-02.jpg" alt="Author image">
                                 <div class="author-info">
                                     Steve Jobs
                                     <span class="position">CEO, Apple.</span>
@@ -403,7 +521,7 @@
                         </p>
 
                         <div class="testimonial-author">
-                                <img src="images/avatars/user-03.jpg" alt="Author image">
+                                <img src="static/images/avatars/user-03.jpg" alt="Author image">
                                 <div class="author-info">
                                     John Doe
                                     <span>CEO, ABC Corp.</span>

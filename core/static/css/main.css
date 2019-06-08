@@ -39,6 +39,37 @@
  *
  * ------------------------------------------------------------------- */
 
+/* SAMS CLASSES ------------------------------------------ */
+
+.sppad{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.spcenter{
+  text-align: center;
+}
+
+.spfixed{
+  display: inline-block;
+  width: 8%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.spbg{
+  background-color: #000000;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+
+
+
+/* End SAM'S CLASSES -----------------------------------*/ 
+
+
+
 html {
   font-size: 10px;
 }
@@ -90,7 +121,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #39b54a;
+  color: #70e0f4;
 }
 
 
@@ -383,7 +414,7 @@ dl,
 form,
 .fluid-video-wrapper,
 .ss-custom-select {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -780,9 +811,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  background-color: #39b54a;
-  border-color: #39b54a;
-  color: #FFFFFF;
+  background-color: #38d1dc;
+  border-color: #38d1dc;
+  color: rgb(0, 0, 0);
 }
 
 .button.button-primary:hover,
@@ -1125,10 +1156,14 @@ h1.intro-header::before {
 
 #header {
   width: 100%;
-  height: 72px;
-  background-color: #111111;
+  height: 135px;
+  background-color: #ffffff;
   position: fixed;
+  overflow: hidden;
   left: 50%;
+  border-bottom: 8px #fe3b3b;
+  border-style: solid;
+  border-bottom-width: 8px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1142,8 +1177,8 @@ h1.intro-header::before {
 
 .header-logo {
   position: absolute;
-  left: 40px;
-  top: 50%;
+  /* left: 100px;
+  top: 50%; */
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1158,9 +1193,9 @@ h1.intro-header::before {
   padding: 0;
   outline: 0;
   border: none;
-  width: 97px;
-  height: 22px;
-  background: url("../images/logo.png") no-repeat center;
+  width: 150px;
+  height: 150px;
+  background: url("../images/chant.gif") no-repeat center;
   background-size: 97px 22px;
   font: 0/0 a;
   text-shadow: none;
@@ -1275,7 +1310,7 @@ h1.intro-header::before {
 #header-nav-wrap .header-main-nav {
   display: inline-block;
   list-style: none;
-  height: 72px;
+  height: 120px;
   margin: 0 1rem 0 0;
 }
 
@@ -1287,21 +1322,21 @@ h1.intro-header::before {
 
 #header-nav-wrap .header-main-nav li a {
   display: block;
-  line-height: 72px;
+  line-height: 120px;
 }
 
 #header-nav-wrap .header-main-nav li a,
 #header-nav-wrap .header-main-nav li a:visited {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(17, 16, 16, 0.45);
 }
 
 #header-nav-wrap .header-main-nav li a:hover,
 #header-nav-wrap .header-main-nav li a:focus {
-  color: #ffffff;
+  color: #0c0b0b;
 }
 
 #header-nav-wrap .header-main-nav li.current a {
-  color: #ffffff;
+  color: #302a2a;
 }
 
 #header-nav-wrap .cta {
@@ -1835,7 +1870,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 #about {
   min-height: 786px;
   background: #ffffff;
-  padding-top: 18rem;
+  padding-top: 12rem;
   overflow: hidden;
 }
 
@@ -2078,7 +2113,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #pricing {
   background: #ebebeb;
-  padding-top: 15rem;
+  padding-top: 8rem;
   padding-bottom: 12rem;
 }
 
@@ -2110,7 +2145,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 .pricing-table .plan-block .plan-block-title {
   font-family: "montserrat-regular", sans-serif;
   font-size: 2.4rem;
-  margin-bottom: 3.6rem;
+  margin-bottom: 0rem;
 }
 
 .pricing-table .plan-block .plan-block-price {
@@ -2125,7 +2160,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   font-family: "montserrat-regular", sans-serif;
   font-size: 3rem;
   top: -3.6rem;
-  margin-right: 3px;
+  margin-right: 0px;
 }
 
 .pricing-table .plan-block .plan-block-per {
@@ -2149,12 +2184,12 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 .pricing-table .plan-block .plan-block-features li span {
-  color: #39b54a;
+  color: #55969d;
   font-family: "muli-bold", sans-serif;
 }
 
 .pricing-table .plan-block.primary {
-  background: #39b54a;
+  background: #55969d;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -2183,7 +2218,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .pricing-table .plan-block.primary .button.button-primary:hover,
 .pricing-table .plan-block.primary .button.button-primary:focus {
-  color: #39b54a;
+  color: #39bd4a;
 }
 
 .pricing-table .plan-bottom-part {
@@ -2658,8 +2693,8 @@ footer ul a:visited {
 .footer-subscribe #mc-form input[type="email"] {
   width: 100%;
   height: 5.4rem;
-  padding: 1.2rem 100px 1.2rem 60px;
-  background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 60px 1.2rem 60px;
+  background: url(..static/images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
   background-size: 24px 16px, auto;
   margin-bottom: 1.8rem;
   color: rgba(255, 255, 255, 0.5);
@@ -2677,7 +2712,7 @@ footer ul a:visited {
   background: #39b54a;
   border-color: #39b54a;
   border-radius: 0 .5rem .5rem 0;
-  padding: 0 15px;
+  padding: 0 0px;
 }
 
 .footer-subscribe #mc-form label {
@@ -2688,7 +2723,7 @@ footer ul a:visited {
 }
 
 .footer-subscribe #mc-form label i {
-  padding-right: 6px;
+  /* padding-right: 6px; */
 }
 
 .footer-subscribe #mc-form ::-webkit-input-placeholder {
