@@ -1334,7 +1334,7 @@ h1.intro-header::before {
 
 #header-nav-wrap .header-main-nav li a,
 #header-nav-wrap .header-main-nav li a:visited {
-  color: rgba(17, 16, 16, 0.45);
+  color: #0c0b0b;
 }
 
 #header-nav-wrap .header-main-nav li a:hover,
