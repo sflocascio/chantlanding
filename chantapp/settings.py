@@ -122,22 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-
-#adding from docs
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  
-#STATICFILES_DIRS = (
-    #os.path.join(BASE_DIR, 'static'),
-#)
-# end add from docs 
-
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-
-PROJECT_PATH = os.path.abspath(PROJECT_PATH)
-
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
-)   
+)
 
 #What sam added 
 STATIC_PATH = os.path.join(PROJECT_PATH,'static')
