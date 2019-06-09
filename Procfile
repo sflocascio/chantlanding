@@ -1,2 +1,2 @@
 
-web: gunicorn chantapp.wsgi
+web: gunicorn chantlanding.wsgi
