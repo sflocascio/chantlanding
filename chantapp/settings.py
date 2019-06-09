@@ -129,7 +129,7 @@ STATICFILES_DIRS = (
 )
 
 #What sam added 
-STATIC_PATH = os.path.join(PROJECT_PATH,'static')
+#STATIC_PATH = os.path.join(PROJECT_PATH,'static')
 #end what sam added
 
 #WhiteNoise Static Storage
