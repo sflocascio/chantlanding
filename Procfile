@@ -1,0 +1,2 @@
+
+gunicorn chantapp.wsgi
