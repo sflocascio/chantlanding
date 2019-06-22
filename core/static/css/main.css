@@ -377,7 +377,7 @@ ul.disc li::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #39b54a;
+  background: #40ffc4;
   position: absolute;
   left: -17px;
   top: 11px;
@@ -386,7 +386,7 @@ ul.disc li::before {
 
 dt {
   margin: 0;
-  color: #39b54a;
+  color: #40ffc4;
 }
 
 dd {
@@ -601,6 +601,10 @@ fieldset {
   border: none;
 }
 
+.spinput{
+  background: rgba(66, 176, 168, 0.249);
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -620,7 +624,7 @@ select {
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgb(227, 227, 227);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
@@ -762,7 +766,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: none;
-  -webkit-text-fill-color: #57ca67;
+  -webkit-text-fill-color: #40ffc4;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -818,8 +822,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  background-color: #38d1dc;
-  border-color: #38d1dc;
+  background-color: #40ffc4;
+  border-color: #40ffc4;
   color: rgb(0, 0, 0);
 }
 
@@ -833,8 +837,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  background: #309a3f;
-  border-color: #309a3f;
+  background: #ffffff;
+  border-color: #40ffc4;
 }
 
 button.full-width,
@@ -1090,7 +1094,7 @@ input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-  color: #39b54a;
+  color: #40ffc4;
 }
 
 .stats-tabs li a em {
@@ -1228,16 +1232,17 @@ h1.intro-header::before {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(133, 133, 133);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .header-menu-toggle:hover,
 .header-menu-toggle:focus {
-  color: #FFFFFF;
+  color: rgb(120, 120, 120);
 }
 
+/* mobile hamburger  */
 .header-menu-toggle span {
   display: block;
   width: 24px;
@@ -1248,7 +1253,7 @@ h1.intro-header::before {
   top: 50%;
   right: auto;
   bottom: auto;
-  background-color: white;
+  background-color: rgb(113, 112, 112);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   font: 0/0 a;
@@ -1277,7 +1282,7 @@ h1.intro-header::before {
 }
 
 .header-menu-toggle.is-clicked span {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(0, 0, 0);
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -1334,16 +1339,16 @@ h1.intro-header::before {
 
 #header-nav-wrap .header-main-nav li a,
 #header-nav-wrap .header-main-nav li a:visited {
-  color: #0c0b0b;
+  color: #555555;
 }
 
 #header-nav-wrap .header-main-nav li a:hover,
 #header-nav-wrap .header-main-nav li a:focus {
-  color: #0c0b0b;
+  color: #d0d0d0;
 }
 
 #header-nav-wrap .header-main-nav li.current a {
-  color: #302a2a;
+  color: #656565;
 }
 
 #header-nav-wrap .cta {
@@ -1371,23 +1376,26 @@ h1.intro-header::before {
 
 @media only screen and (max-width: 768px) {
   .header-logo a {
-    width: 88px;
-    height: 20px;
-    background-size: 88px 20px;
+    width: 100%;
+    height: 100%;
+    background-size: 100px 100px;
   }
+  /* Drop down for mobile */
   #header-nav-wrap {
     display: none;
     height: auto;
     width: 100%;
     right: auto;
     left: 0;
-    background-color: #111111;
-    padding: 120px 40px 54px;
+    opacity: .9;
+    background-color: #fefefe6f;
+    padding: 0px 10px 0px;
+    padding-top: 20px;
   }
   #header-nav-wrap .header-main-nav {
     display: block;
     height: auto;
-    margin: 0 0 4.2rem 0;
+    margin: 0 0 2.2rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.03);
   }
   #header-nav-wrap .header-main-nav li {
@@ -1397,29 +1405,29 @@ h1.intro-header::before {
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   }
   #header-nav-wrap .header-main-nav li a {
-    padding: 18px 0;
-    line-height: 18px;
+    padding: 3px 0;
+    line-height: 15px;
   }
   #header-nav-wrap .cta {
-    height: 42px;
-    line-height: calc(42px - .6rem);
-    padding: 0 30px;
+    height: 10px;
+    /* line-height: calc(42px - .6rem); */
+    padding: 0 10px;
   }
   .header-menu-toggle {
-    display: block;
+    display: inline;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #header-nav-wrap .cta {
-    display: block;
-    padding: 0 20px;
+    display: inline;
+    padding: 0 0px;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .header-menu-toggle {
-    right: 24px;
+    right: 0px;
   }
 }
 
@@ -1596,7 +1604,7 @@ h1.intro-header::before {
 .home-social-list li a:hover,
 .home-social-list li a:focus,
 .home-social-list li a:active {
-  color: #44c455;
+  color: #40ffc4;
 }
 
 
@@ -1621,7 +1629,7 @@ h1.intro-header::before {
 
 .home-scrolldown a:hover,
 .home-scrolldown a:focus {
-  color: #44c455 !important;
+  color: #40ffc4 !important;
 }
 
 html[data-useragent*='MSIE 10.0'] .home-scrolldown,
@@ -1900,7 +1908,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 .about-features .feature .icon i {
-  color: #39b54a;
+  color: #40ffc4;
   font-size: 4.8rem;
 }
 
@@ -1982,7 +1990,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   line-height: 54px;
   text-align: center;
   border-radius: 50%;
-  background-color: #39b54a;
+  background-color: #40ffc4;
   box-shadow: 0 0 0 15px #ffffff;
   z-index: 500;
   position: absolute;
@@ -2194,12 +2202,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   color: #55969d;
   font-family: "muli-bold", sans-serif;
 }
-
+/* This Affects the Beta Form Bckgnd */
 .pricing-table .plan-block.primary {
-  background: #000000;
-  color: rgba(255, 255, 255, 0.8);
+  background: #2e2e2e;
+  color: rgb(218, 218, 218);
 }
 
+/* This affects the text of form field */
 .pricing-table .plan-block.primary .plan-block-title,
 .pricing-table .plan-block.primary .plan-block-price {
   color: #ffffff;
@@ -2225,7 +2234,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .pricing-table .plan-block.primary .button.button-primary:hover,
 .pricing-table .plan-block.primary .button.button-primary:focus {
-  color: #39bd4a;
+  color: #0d0e0d;
 }
 
 .pricing-table .plan-bottom-part {
@@ -2463,7 +2472,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #testimonial-slider .owl-dots .owl-dot.active span,
 #testimonial-slider .owl-dots .owl-dot:hover span {
-  background-color: #39b54a;
+  background-color: #40ffc4;
 }
 
 
@@ -2610,7 +2619,7 @@ footer {
 
 footer a,
 footer a:visited {
-  color: #39b54a;
+  color: #40ffc4;
 }
 
 footer a:hover,
@@ -2715,15 +2724,15 @@ footer ul a:visited {
   position: absolute;
   top: 0;
   right: 0;
-  color: #ffffff;
-  background: #ff1616;
-  border-color: #ff1616;
+  color: #6c6c6c;
+  background: #bdbdbd;
+  border-color: #c2c2c2;
   border-radius: 0 .5rem .5rem 0;
   padding: 0 0px;
 }
 
 .footer-subscribe #mc-form label {
-  color: #ffffff;
+  color: #828282;
   font-family: "montserrat-regular", sans-serif;
   font-size: 1.3rem;
   padding: 0 2rem;

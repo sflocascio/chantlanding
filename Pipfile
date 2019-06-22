@@ -9,6 +9,7 @@ django = "*"
 whitenoise = "*"
 gunicorn = "*"
 django-heroku = "*"
+python-decouple = "*"
 
 [dev-packages]
 

@@ -1,0 +1,15 @@
+You received a message from your website contact form, from the user:
+
+{{ user }}
+
+City/State:
+
+{{ city }}
+
+Interests:
+
+{{ interests }}
+
+Reply to this email:
+
+{{ email }}

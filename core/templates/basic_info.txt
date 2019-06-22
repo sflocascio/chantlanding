@@ -1,0 +1,8 @@
+You received a INFO message from your website Footer contact form, from the user:
+
+{{ user }}
+
+
+Reply to this email:
+
+{{ email }}
