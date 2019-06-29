@@ -3,6 +3,7 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import get_template
 from django.conf import settings
+from django.contrib import messages
 
 # Create your views here.
 def index (request):
@@ -36,18 +37,21 @@ def index (request):
         if request.POST.get("sendinfo"):
             contact_message = get_template('contact_message.txt').render(context)
             send_mail(subject, contact_message, from_email, to_email, fail_silently=True)
+            messages.success(request, "Thanks for your email, we'll add you to our mailing list so you can get more information about Chant     - The Chant Team   ")
             #messages.success(request, "Thanks for your email, I'll be in touch with you soon! -Troy   ")
             return redirect('home')
 
         if request.POST.get("beta"):
             contact_message = get_template('contact_beta.txt').render(context)
             send_mail(subject, contact_message, from_email, to_email, fail_silently=True)
+            messages.success(request, "Thanks for your email, we'll add you to our Beta list and reach out with more information soon      - The Chant Team    ")
             #messages.success(request, "Thanks for your email, I'll be in touch with you soon! -Troy   ")
             return redirect('home')
 
         if request.POST.get("basic"):
             contact_message = get_template('basic_info.txt').render(context)
             send_mail(subject, contact_message, from_email, to_email, fail_silently=True)
+            messages.success(request, "Thanks for your email, we'll add you to our mailing list so you can get more information about Chant     - The Chant Team    ")
             #messages.success(request, "Thanks for your email, I'll be in touch with you soon! -Troy   ")
             return redirect('home')
 

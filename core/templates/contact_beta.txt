@@ -1,4 +1,4 @@
-You received a BETA message from your website contact form, from the user:
+You received a message from your BETA website contact form, from the user:
 
 {{ user }}
 

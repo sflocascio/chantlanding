@@ -12,9 +12,17 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import django_heroku
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+#what sam is adding for env variables 
+SETTINGS_DIR = os.path.dirname(__file__)
+PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+PROJECT_PATH = os.path.abspath(PROJECT_PATH)
+TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
+#end what sam is adding for env variables 
 
 
 # Quick-start development settings - unsuitable for production
@@ -134,6 +142,20 @@ STATICFILES_DIRS = (
 
 #WhiteNoise Static Storage
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+SEND_GRID_API_KEY = config('API_KEY')
+EMAIL_HOST = 'smtp.sendgrid.net'
+
+EMAIL_HOST_USER = config('USER')
+
+EMAIL_HOST_PASSWORD = config('PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+DEFAULT_FROM_EMAIL = config('FROM_EMAIL')
+DEFAULT_TO_EMAIL = config('TO_EMAIL')
+ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Contact Email Received from Chant website'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
 

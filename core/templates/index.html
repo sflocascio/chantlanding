@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{% static "css/base.css" %}" >
     <link rel="stylesheet" href="{% static "css/vendor.css" %}" >
     <link rel="stylesheet" href="{% static "css/main.css" %}" >
+    
 
     <!-- script
    ================================================== -->
@@ -43,6 +44,17 @@
 
 {% block content %}
 <body id="top">
+{% comment %} 
+{% if messages %}
+						{% for message in messages %}
+                                   <div class="notification "> 
+                                    <div class="#">
+                                        <button class="delete"></button> 
+                                        <button class="#"></button>
+                                        <h1> {{ message }} </h1> 
+                                        </div>
+							{% endfor %}
+						{% endif %} {% endcomment %}
 
     <!-- header 
    ================================================== -->
@@ -69,6 +81,8 @@
 		<a class="header-menu-toggle" href="#"><span>Menu</span></a>  	
    	
    </header> <!-- /header -->
+
+                     
 
 
    <!-- home
@@ -108,8 +122,8 @@
 
                 <div class="home-image-right">
                 <br> 
-                    <img src="static/images/iphone-app-470.png" 
-                        srcset="static/images/iphone-app-470.png 1x, static/images/iphone-app-940.png 2x"  
+                    <img src="static/images/phone1.png" 
+                        {% comment %} srcset="static/images/phone1.jpg 1x, static/images/phone1.jpg 2x"   {% endcomment %}
                         data-aos="fade-up">
                 </div> 
             </div>
@@ -176,11 +190,11 @@
                
             </div>    
             
-            <img src="static/images/app-screens-1200.png" 
-                srcset="static/images/app-screens-600.png 600w, 
-                        static/images/app-screens-1200.png 1200w, 
-                        static/images/app-screens-2800.png 2800w" 
-                sizes="(max-width: 2800px) 100vw, 2800px"
+            <img width="100%" src="static/images/spread.png" 
+                {% comment %} srcset="static/images/spread.png 600w, 
+                        static/images/spread.png 1200w, 
+                        static/images/spread.png 2896w" 
+                sizes="(max-width: 2896px) 100vw, 2896px" {% endcomment %}
                 alt="App Screenshots" data-aos="fade-up">
 
         </div>  <!-- end about-bottom-image --> 
@@ -356,9 +370,9 @@
                </h3>
                <br>
                <h3> Chant is that proper tool, beautifully designed, purposefully inclusive, and specifically functional for creatives’ needs.  </h3> 
-              
+              <a id="getinvolved"></a> 
                 </div> 
-<a id="getinvolved"></a>
+
                
             </div>
 
@@ -403,6 +417,7 @@
     ================================================== -->
     
     <section id="pricing">
+     
         <div  class="row pricing-content">
 
             <div class="col-four pricing-intro">

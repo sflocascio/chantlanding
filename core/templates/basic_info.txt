@@ -1,4 +1,4 @@
-You received a INFO message from your website Footer contact form, from the user:
+You received message from your website General Info Footer contact form, from the user:
 
 {{ user }}
 
