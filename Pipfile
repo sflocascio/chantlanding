@@ -10,6 +10,7 @@ whitenoise = "*"
 gunicorn = "*"
 django-heroku = "*"
 python-decouple = "*"
+django-super-popups = "*"
 
 [dev-packages]
 

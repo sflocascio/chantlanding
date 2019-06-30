@@ -44,17 +44,16 @@
 
 {% block content %}
 <body id="top">
-{% comment %} 
 {% if messages %}
 						{% for message in messages %}
-                                   <div class="notification "> 
-                                    <div class="#">
-                                        <button class="delete"></button> 
-                                        <button class="#"></button>
-                                        <h1> {{ message }} </h1> 
-                                        </div>
+                                    <li>
+        <div class="alert alert-{{msg.level_tag}}" role="alert">
+        {{msg.message}}
+        </div>
+    </li>
 							{% endfor %}
-						{% endif %} {% endcomment %}
+						{% endif %} 
+
 
     <!-- header 
    ================================================== -->
@@ -79,8 +78,13 @@
 		</nav>  
 
 		<a class="header-menu-toggle" href="#"><span>Menu</span></a>  	
+
+        
+
    	
    </header> <!-- /header -->
+
+
 
                      
 
@@ -90,7 +94,11 @@
    <section id="home" width="50%" data-parallax="scroll" data-image-src="static/images/guitar.jpg" data-natural-width=3000 data-natural-height=2000>
     
         <div class="overlay"></div>
-        <div class="home-content">        
+        <div class="home-content">   
+
+
+
+
 
             <div class="row contents">                     
                 <div class="home-content-left">
@@ -132,11 +140,14 @@
 
         <ul class="home-social-list">
             <li>
-                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/chantapp.io/" target="blank"><i class="fa fa-facebook-square"></i></a>
             </li>
             
             <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.instagram.com/chantapp.io/"  target = "blank"><i class="fa fa-instagram"></i></a>
+            </li>
+             <li>
+                <a href="https://twitter.com/CHANTappfm" target = "blank" ><i class="fa fa-twitter"></i></a>
             </li>
             
         </ul>
@@ -370,7 +381,7 @@
                </h3>
                <br>
                <h3> Chant is that proper tool, beautifully designed, purposefully inclusive, and specifically functional for creatives’ needs.  </h3> 
-              <a id="getinvolved"></a> 
+              
                 </div> 
 
                
@@ -609,13 +620,15 @@
 
                     <ul class="footer-social-list">
                         <li>
-                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                            <a href="https://www.facebook.com/chantapp.io/" target="blank"><i class="fa fa-facebook-square"></i></a>
                         </li>
-                       
+                       <li>
+                            <a href="https://twitter.com/CHANTappfm" target = "blank" ><i class="fa fa-twitter"></i></a>
+                        </li>
                         
                         
                         <li>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/chantapp.io/"  target = "blank"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                     <br>
@@ -630,12 +643,12 @@
                     <p>
                     Chant LLC <br>
                     St. Louis, MO <br>
-                    63101 US<br>		        
+                    63130 US<br>		        
                     </p>
 
                     <p>
-                    CHANT@chantapp.fm  <br>
-                    Phone: (+63) 555 1212 <br>
+                    chant@chantapp.io  <br>
+                    
                        
                     </p>                    
 
@@ -651,7 +664,8 @@
                         {% comment %} <li><a href="#">Blog</a></li> {% endcomment %}
                         {% comment %} <li><a href="#">FAQ</a></li>
                         <li><a href="#">Terms</a></li> {% endcomment %}
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="static/images/privacy.pdf" target="blank">Privacy Policy</a></li>
+                        <li><a href="static/images/terms.pdf" target="blank">Terms and Conditions</a></li>
                     </ul>	      		
                             
                 </div> <!-- end footer-site-links --> 
