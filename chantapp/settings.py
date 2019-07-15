@@ -36,6 +36,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#For Secure SSL forcing 
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
