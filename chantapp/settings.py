@@ -34,7 +34,7 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [www.chant.io]
+ALLOWED_HOSTS = ['www.chant.io']
 
 #For Secure SSL forcing 
 #SECURE_SSL_REDIRECT = True
