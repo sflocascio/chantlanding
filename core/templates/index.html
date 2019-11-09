@@ -39,6 +39,35 @@
     <link rel="shortcut icon" href="{% static "images/favicon.ico" type="image/x-icon" %}">
     <link rel="icon" href="{% static "images/favicon.ico" type="image/x-icon" %}">
 
+    <!-- Insert Analytics Code here 
+	================================================== -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-1P2FW9E293'></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag(‘js’, new Date());
+gtag(‘config’, ‘G-1P2FW9E293’);
+</script>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=‘2.0’;
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,‘script’,
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq(‘init’, ‘418044982210919’);
+fbq(‘track’, ‘PageView’);
+</script>
+
+<noscript><img height='1' width='1' style='display:none'
+src='https://www.facebook.com/tr?id=418044982210919&ev=PageView&noscript=1https://www.facebook.com/tr?id=418044982210919&ev=PageView&noscript=1(44 B)'
+/></noscript>
+
+    
+
 {% endblock header %}
 </head>
 
@@ -59,7 +88,7 @@
     <!-- header 
    ================================================== -->
    <header id="header" class="#">   
-   <center> <img class="sppad spcenter spfixed"  src="static/images/chant.gif"> </center>
+   <center> <img class="sppad spcenter spfixed"  src="static/images/chantnew.gif"> </center>
 
    		{% comment %} <div class="header-logo">
            
@@ -132,7 +161,7 @@
 
                 <div class="home-image-right">
                 <br> 
-                    <img src="static/images/phone1.png" 
+                    <img src="static/images/screen.png" 
                         {% comment %} srcset="static/images/phone1.jpg 1x, static/images/phone1.jpg 2x"   {% endcomment %}
                         data-aos="fade-up">
                 </div> 
@@ -203,7 +232,7 @@
                
             </div>    
             
-            <img width="100%" src="static/images/spread.png" 
+            <img width="100%" src="static/images/screens.png" 
                 {% comment %} srcset="static/images/spread.png 600w, 
                         static/images/spread.png 1200w, 
                         static/images/spread.png 2896w" 
