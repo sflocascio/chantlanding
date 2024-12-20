@@ -34,7 +34,7 @@ def index (request):
             #'message': message
         }
         
-        if request.POST.get("sendinfo"):
+        if request.POST.get("sendinfo"):  
             contact_message = get_template('contact_message.txt').render(context)
             send_mail(subject, contact_message, from_email, to_email, fail_silently=True)
             messages.success(request, "Thanks for your email, we'll add you to our mailing list so you can get more information about Chant     - The Chant Team   ")
